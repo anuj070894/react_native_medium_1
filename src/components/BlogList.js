@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { ScrollView } from 'react-native';
 import axios from 'axios';
 import { parseString } from 'react-native-xml2js';
 import BlogDetail from './BlogDetail';
@@ -28,9 +28,9 @@ class BlogList extends Component { // Component is actually React.Component but 
   render() {
     console.log(this.state);
     return (
-      <View>
+      <ScrollView>
         {this.renderBlogs()}
-      </View>
+      </ScrollView>
     );
   }
 }
